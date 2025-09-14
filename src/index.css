@@ -79,6 +79,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(46, 115, 21);
+  letter-spacing: 1px;
 }
 
 .stats {
@@ -87,6 +88,8 @@ footer {
   padding: 10px;
   border-radius: 5px;
   background-color: #c6dfc7;
+  gap: 50px;
+  padding: ;
 }
 
 .share,
@@ -112,19 +115,55 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 15px 10px;
 }
 
 
 @media (max-width: 1150px) {
   .container {
-    width: 85vw;
+    width: 75vw;
   }
 
-  .stat {
-    padding: 15px 10px;
-  }
-
+  
   .stats {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+}
+
+@media (max-width: 780px) {
+  .stat{
+    
+    font-size: 15px;
+  }
+
+  textarea {
+    font-size: 15px;
+  }
+
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+    .stats {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+@media (max-width: 600px) {
+  .stat{
+    
+    font-size: 0.8rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+    .stats {
     display: flex;
     flex-wrap: wrap;
   }
