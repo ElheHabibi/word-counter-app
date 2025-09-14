@@ -1,6 +1,6 @@
 function H1() {
   return (
-    <div>
+    <div className="title">
       <h1>Word Scope</h1>
     </div>
   );

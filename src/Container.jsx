@@ -3,9 +3,9 @@ import Textbox from "./Textbox";
 
 const Container = () => {
   return (
-    <main>
-      <Textbox />
+    <main className="container">
       <Stats />
+      <Textbox />
     </main>
   );
 };
