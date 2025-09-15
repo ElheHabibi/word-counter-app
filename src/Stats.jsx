@@ -1,10 +1,10 @@
 function Stats({ stats }) {
   return (
     <section className="stats">
-      <Stat number={stats.numberOfChar} label="CHARACTERS" />
-      <Stat number={stats.numberOfWords} label="WORDS" />
-      <Stat number={stats.instagramLeft} label="INSTAGRAM" />
-      <Stat number={stats.threadsLeft} label="THREADS" />
+      <Stat number={stats.numberOfChar} label="characters" />
+      <Stat number={stats.numberOfWords} label="words" />
+      <Stat number={stats.instagramLeft} label="instagram" />
+      <Stat number={stats.threadsLeft} label="threads" />
     </section>
   );
 }
@@ -14,8 +14,8 @@ export default Stats;
 function Stat({ label, number }) {
   return (
     <div className="stat">
-      <h2>{number}</h2>
-      <p>{label}</p>
+      <span className={`stat__number ${number < 0 ? 'stat__number--limit' : ''}`} >{number}</span>
+      <h2 className="stat__name">{label}</h2>
     </div>
   );
 }

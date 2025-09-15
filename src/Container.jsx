@@ -1,18 +1,16 @@
 import { useState } from "react";
 import Stats from "./Stats";
 import Textbox from "./Textbox";
+import { INSTAGRAM_MAX_CHARACTERS, THREADS_MAX_CHARACTERS } from "./constants";
 
 const Container = () => {
   const [text, setText] = useState("");
-  const numberOfChar = text.length;
-  const instagramLeft = 200 - text.length;
-  const threadsLeft = 500 - text.length;
-  const numberOfWords = text.split(/\s/).filter((word) => word !== "").length;
+
   const stats = {
-    numberOfChar : numberOfChar,
-    numberOfWords : numberOfWords,
-    instagramLeft : instagramLeft,
-    threadsLeft : threadsLeft
+    numberOfChar : text.length,
+    numberOfWords : text.split(/\s/).filter((word) => word !== "").length,
+    instagramLeft : INSTAGRAM_MAX_CHARACTERS - text.length,
+    threadsLeft : THREADS_MAX_CHARACTERS - text.length
   }
 
   return (

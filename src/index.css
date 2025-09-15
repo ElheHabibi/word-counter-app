@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "RobotoBold", sans-serif;
-    src: url(/public/fonts/Roboto-Bold.ttf);
+  font-family: "RobotoBold", sans-serif;
+  src: url(/public/fonts/Roboto-Bold.ttf);
 }
 
 @font-face {
-    font-family: "RobotoRegular";
-    src: url(/public/fonts/Roboto-Regular.ttf);
+  font-family: "RobotoRegular";
+  src: url(/public/fonts/Roboto-Regular.ttf);
 }
 
 * {
@@ -15,9 +15,8 @@
 }
 
 body {
-    background-color: hsl(107, 23%, 37%);
-    font-family: RobotoRegular, sans-serif;
-   
+  background-color: hsl(107, 23%, 37%);
+  font-family: RobotoRegular, sans-serif;
 }
 
 textarea {
@@ -25,7 +24,7 @@ textarea {
   border-radius: 5px;
   max-width: 100%;
   height: 300px;
-  font-size: 22px;
+  font-size: 1.5rem;
   resize: none;
   padding: 20px;
   word-wrap: break-word;
@@ -69,8 +68,6 @@ footer {
 
 .title {
   font-family: "RobotoBold", sans-serif;
-  font-size: 2rem;
-  color: white;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -80,7 +77,8 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(34, 88, 14);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-size: 2rem;
 }
 
 .stats {
@@ -90,6 +88,21 @@ footer {
   border-radius: 5px;
   background-color: #c6dfc7;
   gap: 30px;
+}
+
+.stat__number {
+  color: #4d5457;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.stat__number--limit {
+  color: rgb(174, 49, 49);
+}
+
+.stat__name {
+  margin-top: 10px;
+  color: #564c3e;
 }
 
 .share,
@@ -120,65 +133,89 @@ footer {
   padding: 15px 10px;
 }
 
-.warning  {
+.warning {
   position: absolute;
   bottom: 15px;
   left: 35px;
-  color: red;
+  color: rgb(174, 49, 49);
   font-size: 14px;
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
 }
 
-
 @media (max-width: 1150px) {
   .container {
     width: 75vw;
   }
 
-  
   .stats {
     display: flex;
     flex-wrap: wrap;
   }
-  
 }
 
-@media (max-width: 780px) {
-  .stat{
-    
-    font-size: 15px;
-  }
+@media (max-width: 880px) {
+  
+  .stat__number {
+  color: #4d5457;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.stat__number--limit {
+  color: rgb(174, 49, 49);
+}
+
+.stat__name {
+  margin-top: 10px;
+  color: #564c3e;
+  font-size: 1.2rem;
+}
 
   textarea {
-    font-size: 15px;
+    font-size: 1rem;
   }
-
 
   .title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
-    .stats {
+  .stats {
     display: flex;
     flex-wrap: wrap;
   }
-
 }
-@media (max-width: 600px) {
-  .stat{
-    
-    font-size: 0.8rem;
+
+@media (max-width: 660px) {
+  .stat {
+    font-size: 0.5rem;
   }
 
   .title {
-    font-size: 1.2rem;
+    font-size: 1.19rem;
+    display: flex;
   }
 
-    .stats {
+  .stats {
     display: flex;
     flex-wrap: wrap;
   }
 
+  .stat__number {
+  color: #4d5457;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.stat__number--limit {
+  color: rgb(174, 49, 49);
+}
+
+
+.stat__name {
+  margin-top: 10px;
+  color: #564c3e;
+  font-size: 1.2rem;
+}
 }
