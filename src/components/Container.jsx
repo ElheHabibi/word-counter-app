@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Stats from "./Stats";
 import Textbox from "./Textbox";
-import { INSTAGRAM_MAX_CHARACTERS, THREADS_MAX_CHARACTERS } from "./constants";
+import { INSTAGRAM_MAX_CHARACTERS, THREADS_MAX_CHARACTERS } from "../lib/constants";
 
 const Container = () => {
   const [text, setText] = useState("");
