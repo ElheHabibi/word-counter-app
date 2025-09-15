@@ -3,8 +3,8 @@ function Stats({ stats }) {
     <section className="stats">
       <Stat number={stats.numberOfChar} label="characters" />
       <Stat number={stats.numberOfWords} label="words" />
+      <Stat number={stats.sentences} label="sentences" />
       <Stat number={stats.instagramLeft} label="instagram" />
-      <Stat number={stats.threadsLeft} label="threads" />
     </section>
   );
 }
