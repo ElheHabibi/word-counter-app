@@ -1,26 +1,21 @@
-function Stats() {
-  return <section className="stats">
-    <div className="stat">
-      <h2>10K+</h2>
-      <p>Companies</p>
-    </div>
-
-    <div className="stat">
-      <h2>314</h2>
-      <p>Templates</p>      
-    </div>
-
-    <div className="stat">
-      <h2>12M+</h2>
-      <p>Queries</p>      
-    </div>
-
-    <div className="stat">
-      <h2>1.2M+</h2>
-      <p>Users</p>
-    </div>
-
-  </section>;
+function Stats({ stats }) {
+  return (
+    <section className="stats">
+      <Stat number={stats.numberOfChar} label="CHARACTERS" />
+      <Stat number={stats.numberOfWords} label="WORDS" />
+      <Stat number={stats.instagramLeft} label="INSTAGRAM" />
+      <Stat number={stats.threadsLeft} label="THREADS" />
+    </section>
+  );
 }
 
 export default Stats;
+
+function Stat({ label, number }) {
+  return (
+    <div className="stat">
+      <h2>{number}</h2>
+      <p>{label}</p>
+    </div>
+  );
+}

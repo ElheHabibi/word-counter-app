@@ -7,11 +7,14 @@ function Footer() {
       <a href="#" className="instagram">
         <i className="bx  bxl-instagram"></i>
       </a>
-      <a href="#" className="twitter"> 
-        <i className="bx  bxl-twitter"></i>
+      <a href="#" className="twitter">
+        <i class="bxl bx-twitter-x"></i>
       </a>
       <a href="#" className="facebook">
-        <i className="bx  bxl-facebook"></i>
+        <i class="bx  bxl-facebook"></i>
+      </a>
+      <a href="#" className="threads">
+        <i class="bxl  bx-threads"></i>
       </a>
     </footer>
   );

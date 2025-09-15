@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Warning from "./Warning";
 
-function Textbox() {
-  const [text, setText] = useState("");
+function Textbox({ text, setText }) {
   const [showWarning, setShowWarning] = useState(false);
 
   const handleClick = (e) => {
@@ -12,10 +11,10 @@ function Textbox() {
       setShowWarning(true);
       newText = newText.replace("<script>", "");
       setText(newText);
-    }else{
-      setShowWarning('')
+    } else {
+      setShowWarning("");
     }
-      setText(newText);
+    setText(newText);
   };
 
   return (
