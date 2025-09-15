@@ -89,13 +89,14 @@ footer {
   padding: 10px;
   border-radius: 5px;
   background-color: #c6dfc7;
-  gap: 50px;
+  gap: 30px;
 }
 
 .share,
 .instagram,
 .twitter,
-.facebook {
+.facebook,
+.threads {
   font-size: 1.5rem;
   color: white;
   padding: 10px;
@@ -105,7 +106,8 @@ footer {
 .share:hover,
 .instagram:hover,
 .twitter:hover,
-.facebook:hover {
+.facebook:hover,
+.threads:hover {
   background-color: #3e5939;
   color: #c6dfc7;
   border-radius: 5px;
