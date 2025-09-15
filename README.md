@@ -1,13 +1,12 @@
-This project is built with [vite](https://vitejs.dev/) and React for fast deployement and hot module replacement.
+This project is built with **[vite](https://vitejs.dev/)** and **React** for fast deployement and hot module replacement.
 
 ## 💎 Features
 
--**Live Counting**: characters, words, and sentences update as you type.
--**word Limit For Instagram**: Shows remaining characters left based on Instagram's max length.
--**Basic Security**:Blocks and remove '<script>' tags with a visible warning.
--**Modular design**: Each UI section is a seperate and reusable component.
+- **Live Counting**: characters, words, and sentences update as you type.
+- **word Limit For Instagram**: Shows remaining characters left based on Instagram's max length.
+- **Basic Security**: Blocks and remove '<script>' tags with a visible warning.
+- **Modular design**: Each UI section is a seperate and reusable component.
 
------------------------------------------------------------------------------------------------------------------
 
 ## ▶️ Usage
 
@@ -20,6 +19,6 @@ This project is built with [vite](https://vitejs.dev/) and React for fast deploy
 3. Build for production:
    ```bash
    npm run build
-4. Preview the production build (optional)
-
-
+4. Preview the production build (optional):
+   ```bash
+   npm run preview
