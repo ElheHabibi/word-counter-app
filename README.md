@@ -1,6 +1,6 @@
 This project is built with **[vite](https://vitejs.dev/)** and **React** for fast deployement and hot module replacement.
 
-## Key React concepts used
+## React concepts used
 - **Event handling** (handle text input changes)
 - **State Management** (`useState` is used)
 - **Component Reusablity** (Each UI section is a seperate and reusable component.)
@@ -13,20 +13,4 @@ This project is built with **[vite](https://vitejs.dev/)** and **React** for fas
 - **word Limit For Instagram** : Shows remaining characters left based on Instagram's max length.
 - **Basic Security** : (conditional rendering) If the user Enters '<script>' tags, they would be removed and a warning appears.
 - **Responsive UI** 
-  
 
-## Usage
-
-After cloning the project:
-1. Install dependencies:
-   ```bash
-   npm install
-2. Start the development server:
-   ```bash
-   npm run dev
-3. Build for production:
-   ```bash
-   npm run build
-4. Preview the production build (optional):
-   ```bash
-   npm run preview
