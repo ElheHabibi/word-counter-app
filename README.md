@@ -1,12 +1,5 @@
-This project is built with **[vite](https://vitejs.dev/)** and **React** for fast deployement and hot module replacement.
+This project is built with **[vite](https://vitejs.dev/)** and **React**.
 
-## React concepts used
-- **Event handling** (handle text input changes)
-- **State Management** (`useState` is used)
-- **Component Reusablity** (Each UI section is a seperate and reusable component.)
-- **Combining Props to a single Prop Object** (for cleaner components)
-  
-  
 ## Features of app
 
 - **Controlled text by useState Hook** : characters, words, and sentences update as you type.
